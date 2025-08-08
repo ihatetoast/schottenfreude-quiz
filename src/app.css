@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+/* tailwind later */
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    #000000 0%,
+    #000000 33.33%,
+    #dd0000 33.33%,
+    #dd0000 66.66%,
+    #ffcc00 66.66%,
+    #ffcc00 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#root {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid chartreuse;
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CONVERT TO TAILWIND */
+
+
+.card {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card.flipped {
+  background-color: chartreuse;
+}
