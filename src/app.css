@@ -16,18 +16,6 @@ body {
   background-attachment: fixed;
 }
 
-#root {
-  position: absolute;
-  background-color: #fff;
-  border: 1px solid chartreuse;
-  width: 80%;
-  height: 90%;
-  margin: 0 auto;
-  left: 50%;
-  top: 50%;
-    transform: translate(-50%, -50%);
-}
-
 /* CONVERT TO TAILWIND */
 
 

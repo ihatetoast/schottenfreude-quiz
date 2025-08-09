@@ -7,7 +7,6 @@ export const words = [
       'The Discomfort from being too bloated',
       'The exhausting effort of being a good houseguest',
       "The need to invite someone you don't like",
-      'The fear of being seen by owls',
     ],
   },
   {
@@ -19,7 +18,6 @@ export const words = [
       'The sudden, innervating clarity afforded by new glasses',
       'The shine of freshly polished silverware',
       'The desire to dance when emotionally exhausted',
-      'The sudden realisation that one is the smartest individual in the room',
     ],
   },
   {
@@ -28,7 +26,6 @@ export const words = [
     englishTranslation:
       'A person who has the urge to peek into boarded-up construction sites',
     options: [
-      'A person who calls shames fellow passengers for having too much carry-on luggage',
       'A person whose underpants are visible below the shorts',
       'A person who has the urge to peek into boarded-up construction sites',
       'A person who steals coins from a fountain',
