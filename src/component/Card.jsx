@@ -2,28 +2,40 @@ import { useState } from 'react';
 
 export default function Card({ card }) {
   const [flip, setFlip] = useState(false);
-
+  const lets = ['a', 'b', 'c'];
   return (
     <article
-      className={`flex justify-center items-center relative rounded-2xl shadow-xl shadow-red-600/35 bg-stone-50 w-120 h-60 mb-2 transition-transform duration-500 transform-3d ${flip  ? 'rotate-y-180': ''}`}
+      className={`flex justify-center items-center relative rounded-2xl 
+        shadow-m shadow-[0px_4px_6px_3px_rgba(221,_0,_0,_0.5)] bg-stone-200 min-w-140 w-1/2 h-60 my-4 mx-4
+        transition-transform  duration-500 transform-3d perspective-distant 
+        cursor-pointer hover:shadow-[0px_4px_6px_3px_rgba(221,_0,_0,_0.7)] hover:-translate-y-1
+        ${flip ? 'rotate-y-180' : ''}`}
       onClick={() => setFlip(!flip)}
     >
       <div className='absolute p-4 backface-hidden'>
-       <p className="text-center">{card.germanWord}</p>
-        <ul>
+        <p className='text-center font-bold text-3xl text-stone-800 font-title'>
+          {card.germanWord}
+        </p>
+        <ul className='mt-2 text-stone-800'>
           {card.options.map((opt, idx) => (
-            <li key={idx}>{opt}</li>
+            <li key={idx} className='mt-1'>
+              {`${lets[idx]}: ${opt}`}
+            </li>
           ))}
         </ul>
       </div>
-      <div className='absolute p-4 rotate-y-180 backface-hidden'>{card.englishTranslation}</div>
+      <div className='absolute p-4 rotate-y-180 backface-hidden'>
+        <p className='text-center font-bold text-xl text-stone-800'>
+          {card.englishTranslation}
+        </p>
+      </div>
     </article>
   );
 }
 
 // 14:45
 
-// lassName={`p-2 ${count <= 0 ? 'opacity-50 pointer-events-none': 'bg-red-700'}`} 
+// lassName={`p-2 ${count <= 0 ? 'opacity-50 pointer-events-none': 'bg-red-700'}`}
 
 // possible change to tailwind, but learn the js first.
 // tailwind is hover. check for click. active: ...

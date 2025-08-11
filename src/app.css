@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import 'tailwindcss';
 /* tailwind later */
 
@@ -16,15 +18,8 @@ body {
   background-attachment: fixed;
 }
 
-/* CONVERT TO TAILWIND */
-
-
-.card {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@theme {
+  --font-body: "Roboto", sans-serif; 
+  --font-title: "Manufacturing Consent", "Garamond", serif
 }
-.card.flipped {
-  background-color: chartreuse;
-}
+
